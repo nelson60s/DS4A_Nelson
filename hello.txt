@@ -1,0 +1,11 @@
+Let's go through a simple example of committing a change to some text file hello.txt:
+
+Create a text file hello.txt on your local computer in the folder you will be using Git from.
+
+Edit the file to add one line to the text file; e.g. you add "Hello World" as the first line. Save the file.
+
+Track this file using git. To do this, use the command: git add hello.txt. (If you have multiple files and you'd like to add all the files with changes in the folder to be tracked by git you can use the command: git add *)
+
+To commit the changes on all tracked files, use the command: git commit -m "Commit message" where "Commit message" should be a short but descriptive reminder of the changes you've made since the last time you ran a commit (for the first one, you can use something like "initial commit" as a message, but using as descriptive a message as possible will help debug any problems further down the line).
+
+You've created a checkpoint of your files now (something you could revert back to later if needed), but it still only exists on your local machine. To push the changes to your remote repository, use the command: git push origin master
